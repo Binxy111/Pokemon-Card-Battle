@@ -1,20 +1,20 @@
 function deckBuilder() {
   const values = [
-    "A",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
+    "Charmander",
+    "Charmelion",
+    "Charzard",
+    "Squirtle",
+    "warturtle",
+    "blastoise",
+    "Bulbasaur",
+    "ivysaur",
+    "venasaur",
+    "",
     "J",
     "Q",
     "K",
   ];
-  const suits = ["Hearts", "Diamonds", "Spades", "Clubs"];
+  const suits = ["fire", "water", "plant", "electric"];
   const cards = [];
   for (let s = 0; s < suits.length; s++) {
     for (let v = 0; v < values.length; v++) {
