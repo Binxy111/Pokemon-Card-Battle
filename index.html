@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Random Playing Card</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>    
-    <script src="script.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokemon TCG Simulator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokemon TCG Simulator</h1>
+        </header>
+        <main>
+            <section id="player-deck">
+                <h2>Your Deck</h2>
+                <div class="card-container" id="your-cards"></div>
+            </section>
+            <section id="opponent-deck">
+                <h2>Opponent's Deck</h2>
+                <div class="card-container" id="opponent-cards"></div>
+            </section>
+            <section id="shop">
+                <h2>Shop</h2>
+                <button id="buy-pack">Buy Card Pack</button>
+                <div class="card-container" id="shop-cards"></div>
+            </section>
+        </main>
+        <footer>
+            <p>Pokemon TCG Simulator &copy; 2023</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>
