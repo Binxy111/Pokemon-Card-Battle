@@ -1,7 +1,15 @@
 const cardPack = [
-    { name: 'Pikachu', healthPoints: 60, imageUrl: 'path_to_image/pikachu.png' },
-    { name: 'Bulbasaur', healthPoints: 50, imageUrl: 'path_to_image/bulbasaur.png' },
-    // Add more cards...
+{ name: 'Pikachu', healthPoints: 60, imageUrl: 'https://pkmncards.com/wp-content/uploads/sv1_en_001-1.jpg' },
+{ name: 'Bulbasaur', healthPoints: 50, imageUrl: 'https://pkmncards.com/wp-content/uploads/sv1_en_002-1-312x435.jpg' },
+{ name: 'Bulbasaur', healthPoints: 50, imageUrl: 'https://pkmncards.com/wp-content/uploads/sv1_en_003-1-312x435.jpg' },
+{ name: 'Bulbasaur', healthPoints: 50, imageUrl: 'https://pkmncards.com/wp-content/uploads/sv1_en_004-1-312x435.jpg' },
+{ name: 'Bulbasaur', healthPoints: 50, imageUrl: 'https://pkmncards.com/wp-content/uploads/sv1_en_005-1-312x435.jpg' },
+{ name: 'Bulbasaur', healthPoints: 50, imageUrl: 'path_to_image/bulbasaur.png' },
+{ name: 'Bulbasaur', healthPoints: 50, imageUrl: 'path_to_image/bulbasaur.png' },
+{ name: 'Bulbasaur', healthPoints: 50, imageUrl: 'path_to_image/bulbasaur.png' },
+{ name: 'Bulbasaur', healthPoints: 50, imageUrl: 'path_to_image/bulbasaur.png' },
+{ name: 'Bulbasaur', healthPoints: 50, imageUrl: 'path_to_image/bulbasaur.png' },
+{ name: 'Bulbasaur', healthPoints: 50, imageUrl: 'path_to_image/bulbasaur.png' },
 ];
 
 document.getElementById('buyPack').addEventListener('click', () => {
