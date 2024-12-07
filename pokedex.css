@@ -1,0 +1,1131 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform-style: preserve-3d;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body, html {
+  height: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+button, input {
+  font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: #263238;
+  color: white;
+  font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 4px;
+  opacity: 0;
+}
+main.animated {
+  opacity: 1;
+  transition: all 1000ms ease-out;
+}
+
+section {
+  padding: 4px;
+  width: 100%;
+}
+section .section-header {
+  display: none;
+  width: 100%;
+}
+section h2 {
+  padding: 8px;
+  border-radius: 2px 2px 0 0;
+  background: #90A4AE;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+section ul {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+section ul li {
+  padding: 4px;
+}
+section .filter {
+  padding: 4px;
+  background: #ECEFF1;
+}
+section .filter a, section .filter button {
+  display: block;
+  cursor: pointer;
+}
+section .filter button {
+  margin: 0;
+}
+section .grid {
+  padding: 4px;
+  border-radius: 0 0 2px 2px;
+  background: #fff;
+}
+section .grid li {
+  width: calc(100% / 3);
+}
+@media only screen and (min-width: 440px) {
+  section .grid li {
+    width: calc(100% / 4);
+  }
+}
+@media only screen and (min-width: 560px) {
+  section .grid li {
+    width: calc(100% / 5);
+  }
+}
+@media only screen and (min-width: 768px) {
+  section .grid li {
+    width: calc(100% / 7);
+  }
+}
+@media only screen and (min-width: 1136px) {
+  section .grid li {
+    width: calc(100% / 9);
+  }
+}
+section .grid a, section .grid figure {
+  display: block;
+  width: 100%;
+}
+section .grid a svg, section .grid figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  fill: none;
+}
+section .grid a:hover, section .grid a:focus, section .grid figure:hover, section .grid figure:focus {
+  filter: grayscale(0.5);
+}
+section .grid a:active, section .grid figure:active {
+  filter: grayscale(1);
+}
+
+button[class*=pk] {
+  background: rgba(96, 125, 139, 0.25);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 2px;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+button[class*=pk]:hover, button[class*=pk]:focus {
+  background: #7b96a3;
+}
+button[class*=pk]:active, button[class*=pk].active {
+  background: #607D8B;
+}
+button[class*=pk][class*=gen1] {
+  background: rgba(130, 185, 47, 0.25);
+}
+button[class*=pk][class*=gen1]:hover, button[class*=pk][class*=gen1]:focus {
+  background: #9bd14a;
+}
+button[class*=pk][class*=gen1]:active, button[class*=pk][class*=gen1].active {
+  background: #82B92F;
+}
+button[class*=pk][class*=gen2] {
+  background: rgba(202, 191, 62, 0.25);
+}
+button[class*=pk][class*=gen2]:hover, button[class*=pk][class*=gen2]:focus {
+  background: #d5cc66;
+}
+button[class*=pk][class*=gen2]:active, button[class*=pk][class*=gen2].active {
+  background: #CABF3E;
+}
+button[class*=pk][class*=gen3] {
+  background: rgba(106, 192, 171, 0.25);
+}
+button[class*=pk][class*=gen3]:hover, button[class*=pk][class*=gen3]:focus {
+  background: #8ecfbf;
+}
+button[class*=pk][class*=gen3]:active, button[class*=pk][class*=gen3].active {
+  background: #6AC0AB;
+}
+button[class*=pk][class*=gen4] {
+  background: rgba(143, 115, 162, 0.25);
+}
+button[class*=pk][class*=gen4]:hover, button[class*=pk][class*=gen4]:focus {
+  background: #a892b6;
+}
+button[class*=pk][class*=gen4]:active, button[class*=pk][class*=gen4].active {
+  background: #8F73A2;
+}
+button[class*=pk][class*=gen5] {
+  background: rgba(110, 174, 204, 0.25);
+}
+button[class*=pk][class*=gen5]:hover, button[class*=pk][class*=gen5]:focus {
+  background: #94c3d9;
+}
+button[class*=pk][class*=gen5]:active, button[class*=pk][class*=gen5].active {
+  background: #6EAECC;
+}
+button[class*=pk][class*=gen6] {
+  background: rgba(201, 20, 81, 0.25);
+}
+button[class*=pk][class*=gen6]:hover, button[class*=pk][class*=gen6]:focus {
+  background: #e92768;
+}
+button[class*=pk][class*=gen6]:active, button[class*=pk][class*=gen6].active {
+  background: #C91451;
+}
+button[class*=pk][class*=gen7] {
+  background: rgba(218, 91, 69, 0.25);
+}
+button[class*=pk][class*=gen7]:hover, button[class*=pk][class*=gen7]:focus {
+  background: #e28170;
+}
+button[class*=pk][class*=gen7]:active, button[class*=pk][class*=gen7].active {
+  background: #DA5B45;
+}
+button[class*=pk][class*=normal] {
+  background: rgba(168, 167, 122, 0.25);
+}
+button[class*=pk][class*=normal]:hover, button[class*=pk][class*=normal]:focus {
+  background: #bcbb99;
+}
+button[class*=pk][class*=normal]:active, button[class*=pk][class*=normal].active {
+  background: #A8A77A;
+}
+button[class*=pk][class*=fighting] {
+  background: rgba(190, 50, 46, 0.25);
+}
+button[class*=pk][class*=fighting]:hover, button[class*=pk][class*=fighting]:focus {
+  background: #d44f4b;
+}
+button[class*=pk][class*=fighting]:active, button[class*=pk][class*=fighting].active {
+  background: #BE322E;
+}
+button[class*=pk][class*=flying] {
+  background: rgba(168, 147, 237, 0.25);
+}
+button[class*=pk][class*=flying]:hover, button[class*=pk][class*=flying]:focus {
+  background: #cbbff4;
+}
+button[class*=pk][class*=flying]:active, button[class*=pk][class*=flying].active {
+  background: #A893ED;
+}
+button[class*=pk][class*=poison] {
+  background: rgba(159, 68, 158, 0.25);
+}
+button[class*=pk][class*=poison]:hover, button[class*=pk][class*=poison]:focus {
+  background: #ba5cb8;
+}
+button[class*=pk][class*=poison]:active, button[class*=pk][class*=poison].active {
+  background: #9F449E;
+}
+button[class*=pk][class*=ground] {
+  background: rgba(223, 191, 110, 0.25);
+}
+button[class*=pk][class*=ground]:hover, button[class*=pk][class*=ground]:focus {
+  background: #e8d198;
+}
+button[class*=pk][class*=ground]:active, button[class*=pk][class*=ground].active {
+  background: #DFBF6E;
+}
+button[class*=pk][class*=rock] {
+  background: rgba(183, 159, 65, 0.25);
+}
+button[class*=pk][class*=rock]:hover, button[class*=pk][class*=rock]:focus {
+  background: #c8b363;
+}
+button[class*=pk][class*=rock]:active, button[class*=pk][class*=rock].active {
+  background: #B79F41;
+}
+button[class*=pk][class*=bug] {
+  background: rgba(168, 183, 50, 0.25);
+}
+button[class*=pk][class*=bug]:hover, button[class*=pk][class*=bug]:focus {
+  background: #c0cf4d;
+}
+button[class*=pk][class*=bug]:active, button[class*=pk][class*=bug].active {
+  background: #A8B732;
+}
+button[class*=pk][class*=ghost] {
+  background: rgba(112, 90, 150, 0.25);
+}
+button[class*=pk][class*=ghost]:hover, button[class*=pk][class*=ghost]:focus {
+  background: #8a76ad;
+}
+button[class*=pk][class*=ghost]:active, button[class*=pk][class*=ghost].active {
+  background: #705A96;
+}
+button[class*=pk][class*=steel] {
+  background: rgba(184, 184, 207, 0.25);
+}
+button[class*=pk][class*=steel]:hover, button[class*=pk][class*=steel]:focus {
+  background: #d6d6e4;
+}
+button[class*=pk][class*=steel]:active, button[class*=pk][class*=steel].active {
+  background: #B8B8CF;
+}
+button[class*=pk][class*=fire] {
+  background: rgba(238, 128, 59, 0.25);
+}
+button[class*=pk][class*=fire]:hover, button[class*=pk][class*=fire]:focus {
+  background: #f29e6a;
+}
+button[class*=pk][class*=fire]:active, button[class*=pk][class*=fire].active {
+  background: #EE803B;
+}
+button[class*=pk][class*=water] {
+  background: rgba(106, 146, 237, 0.25);
+}
+button[class*=pk][class*=water]:hover, button[class*=pk][class*=water]:focus {
+  background: #98b3f2;
+}
+button[class*=pk][class*=water]:active, button[class*=pk][class*=water].active {
+  background: #6A92ED;
+}
+button[class*=pk][class*=grass] {
+  background: rgba(122, 198, 87, 0.25);
+}
+button[class*=pk][class*=grass]:hover, button[class*=pk][class*=grass]:focus {
+  background: #98d37d;
+}
+button[class*=pk][class*=grass]:active, button[class*=pk][class*=grass].active {
+  background: #7AC657;
+}
+button[class*=pk][class*=electric] {
+  background: rgba(247, 207, 67, 0.25);
+}
+button[class*=pk][class*=electric]:hover, button[class*=pk][class*=electric]:focus {
+  background: #f9db74;
+}
+button[class*=pk][class*=electric]:active, button[class*=pk][class*=electric].active {
+  background: #F7CF43;
+}
+button[class*=pk][class*=psychic] {
+  background: rgba(246, 91, 137, 0.25);
+}
+button[class*=pk][class*=psychic]:hover, button[class*=pk][class*=psychic]:focus {
+  background: #f98bac;
+}
+button[class*=pk][class*=psychic]:active, button[class*=pk][class*=psychic].active {
+  background: #F65B89;
+}
+button[class*=pk][class*=ice] {
+  background: rgba(154, 216, 215, 0.25);
+}
+button[class*=pk][class*=ice]:hover, button[class*=pk][class*=ice]:focus {
+  background: #bfe6e6;
+}
+button[class*=pk][class*=ice]:active, button[class*=pk][class*=ice].active {
+  background: #9AD8D7;
+}
+button[class*=pk][class*=dragon] {
+  background: rgba(112, 67, 244, 0.25);
+}
+button[class*=pk][class*=dragon]:hover, button[class*=pk][class*=dragon]:focus {
+  background: #9573f7;
+}
+button[class*=pk][class*=dragon]:active, button[class*=pk][class*=dragon].active {
+  background: #7043F4;
+}
+button[class*=pk][class*=dark] {
+  background: rgba(111, 88, 73, 0.25);
+}
+button[class*=pk][class*=dark]:hover, button[class*=pk][class*=dark]:focus {
+  background: #8e705d;
+}
+button[class*=pk][class*=dark]:active, button[class*=pk][class*=dark].active {
+  background: #6F5849;
+}
+button[class*=pk][class*=fairy] {
+  background: rgba(253, 106, 211, 0.25);
+}
+button[class*=pk][class*=fairy]:hover, button[class*=pk][class*=fairy]:focus {
+  background: #fe9ce2;
+}
+button[class*=pk][class*=fairy]:active, button[class*=pk][class*=fairy].active {
+  background: #FD6AD3;
+}
+
+figure[class*=pk] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/000.png");
+  background-color: #CFD8DC;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80px 80px;
+  border-radius: 2px;
+}
+figure[class*=pk]:before, figure[class*=pk]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+}
+figure[class*=pk]:before {
+  left: 0;
+}
+figure[class*=pk]:after {
+  right: 0;
+}
+figure[class*=pk][class*="001"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/001.png");
+  background-color: #a3dba3;
+}
+figure[class*=pk][class*="002"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/002.png");
+  background-color: #91ccbb;
+}
+figure[class*=pk][class*="003"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/003A.png");
+  background-color: #91ccbb;
+}
+figure[class*=pk][class*="003"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/003B.png");
+  background-color: #94d4d4;
+}
+figure[class*=pk][class*="004"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/004.png");
+  background-color: #f7ad69;
+}
+figure[class*=pk][class*="005"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/005.png");
+  background-color: #f89580;
+}
+figure[class*=pk][class*="006"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/006A.png");
+  background-color: #f7ad69;
+}
+figure[class*=pk][class*="006"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/006B.png");
+  background-color: #f8b9a7;
+}
+figure[class*=pk][class*="006"].c {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/006C.png");
+  background-color: #94948d;
+}
+figure[class*=pk][class*="007"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/007.png");
+  background-color: #a7dbf8;
+}
+figure[class*=pk][class*="008"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/008.png");
+  background-color: #c3cdf9;
+}
+figure[class*=pk][class*="009"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/009A.png");
+  background-color: #aacaf3;
+}
+figure[class*=pk][class*="009"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/009B.png");
+  background-color: #aacaf3;
+}
+figure[class*=pk][class*="010"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/010.png");
+  background-color: #b3d87a;
+}
+figure[class*=pk][class*="011"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/011.png");
+  background-color: #b3d87a;
+}
+figure[class*=pk][class*="012"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/012.png");
+  background-color: #8e8bd1;
+}
+figure[class*=pk][class*="013"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/013.png");
+  background-color: #dfc07b;
+}
+figure[class*=pk][class*="014"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/014.png");
+  background-color: #f8df70;
+}
+figure[class*=pk][class*="015"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/015A.png");
+  background-color: #f8ec77;
+}
+figure[class*=pk][class*="015"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/015B.png");
+  background-color: #f8da75;
+}
+figure[class*=pk][class*="016"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/016.png");
+  background-color: #e4b162;
+}
+figure[class*=pk][class*="017"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/017.png");
+  background-color: #c98f6c;
+}
+figure[class*=pk][class*="018"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/018A.png");
+  background-color: #e4b162;
+}
+figure[class*=pk][class*="018"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/018B.png");
+  background-color: #c9896b;
+}
+figure[class*=pk][class*="019"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/019A.png");
+  background-color: #c4afd5;
+}
+figure[class*=pk][class*="019"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/019B.png");
+  background-color: #959595;
+}
+figure[class*=pk][class*="020"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/020A.png");
+  background-color: #c4956a;
+}
+figure[class*=pk][class*="020"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/020B.png");
+  background-color: #8d8d8d;
+}
+figure[class*=pk][class*="021"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/021.png");
+  background-color: #c77c4f;
+}
+figure[class*=pk][class*="022"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/022.png");
+  background-color: #d1a262;
+}
+figure[class*=pk][class*="023"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/023.png");
+  background-color: #d5a8c9;
+}
+figure[class*=pk][class*="024"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/024.png");
+  background-color: #c1abc1;
+}
+figure[class*=pk][class*="025"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/025A.png");
+  background-color: #f8e075;
+}
+figure[class*=pk][class*="026"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/026A.png");
+  background-color: #f8c771;
+}
+figure[class*=pk][class*="026"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/026B.png");
+  background-color: #e5b96f;
+}
+figure[class*=pk][class*="027"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/027A.png");
+  background-color: #ede089;
+}
+figure[class*=pk][class*="027"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/027B.png");
+  background-color: #ddf0fa;
+}
+figure[class*=pk][class*="028"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/028A.png");
+  background-color: #f9e28d;
+}
+figure[class*=pk][class*="028"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/028B.png");
+  background-color: #e0f3fb;
+}
+figure[class*=pk][class*="029"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/029.png");
+  background-color: #e0e9fe;
+}
+figure[class*=pk][class*="030"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/030.png");
+  background-color: #b9ded9;
+}
+figure[class*=pk][class*="031"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/031.png");
+  background-color: #94ceda;
+}
+figure[class*=pk][class*="032"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/032.png");
+  background-color: #ddb0cb;
+}
+figure[class*=pk][class*="033"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/033.png");
+  background-color: #ddb0cb;
+}
+figure[class*=pk][class*="034"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/034.png");
+  background-color: #ddb0cb;
+}
+figure[class*=pk][class*="035"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/035.png");
+  background-color: #ffe3d9;
+}
+figure[class*=pk][class*="036"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/036.png");
+  background-color: #fed9c9;
+}
+figure[class*=pk][class*="037"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/037A.png");
+  background-color: #cb9c7c;
+}
+figure[class*=pk][class*="037"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/037B.png");
+  background-color: #e6f0f9;
+}
+figure[class*=pk][class*="038"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/038A.png");
+  background-color: #faf1c0;
+}
+figure[class*=pk][class*="038"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/038B.png");
+  background-color: #e7f3ff;
+}
+figure[class*=pk][class*="039"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/039.png");
+  background-color: #ffe7e1;
+}
+figure[class*=pk][class*="040"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/040.png");
+  background-color: #ffeee9;
+}
+figure[class*=pk][class*="041"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/041.png");
+  background-color: #92c8d4;
+}
+figure[class*=pk][class*="042"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/042.png");
+  background-color: #8bc1d3;
+}
+figure[class*=pk][class*="043"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/043.png");
+  background-color: #9eaeca;
+}
+figure[class*=pk][class*="044"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/044.png");
+  background-color: #92c2d4;
+}
+figure[class*=pk][class*="045"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/045.png");
+  background-color: #92aad9;
+}
+figure[class*=pk][class*="046"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/046.png");
+  background-color: #f7ad69;
+}
+figure[class*=pk][class*="047"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/047.png");
+  background-color: #f7ad69;
+}
+figure[class*=pk][class*="048"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/048.png");
+  background-color: #b1ade7;
+}
+figure[class*=pk][class*="049"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/049.png");
+  background-color: #d5d2f8;
+}
+figure[class*=pk][class*="050"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/050A.png");
+  background-color: #c49e80;
+}
+figure[class*=pk][class*="050"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/050B.png");
+  background-color: #c39e80;
+}
+figure[class*=pk][class*="051"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/051A.png");
+  background-color: #c49e80;
+}
+figure[class*=pk][class*="051"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/051B.png");
+  background-color: #c39e80;
+}
+figure[class*=pk][class*="052"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/052A.png");
+  background-color: #faf1d2;
+}
+figure[class*=pk][class*="052"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/052B.png");
+  background-color: #ccd1df;
+}
+figure[class*=pk][class*="053"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/053A.png");
+  background-color: #f8eac3;
+}
+figure[class*=pk][class*="053"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/053B.png");
+  background-color: #ccd1df;
+}
+figure[class*=pk][class*="054"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/054.png");
+  background-color: #f9e187;
+}
+figure[class*=pk][class*="055"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/055.png");
+  background-color: #a1c7f5;
+}
+figure[class*=pk][class*="056"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/056.png");
+  background-color: #f8eec9;
+}
+figure[class*=pk][class*="057"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/057.png");
+  background-color: #faf0cc;
+}
+figure[class*=pk][class*="058"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/058.png");
+  background-color: #f7b67d;
+}
+figure[class*=pk][class*="059"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/059.png");
+  background-color: #f8b67c;
+}
+figure[class*=pk][class*="060"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/060.png");
+  background-color: #abbdfb;
+}
+figure[class*=pk][class*="061"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/061.png");
+  background-color: #97b8f7;
+}
+figure[class*=pk][class*="062"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/062.png");
+  background-color: #95b2f7;
+}
+figure[class*=pk][class*="063"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/063.png");
+  background-color: #f9e681;
+}
+figure[class*=pk][class*="064"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/064.png");
+  background-color: #f8e47c;
+}
+figure[class*=pk][class*="065"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/065A.png");
+  background-color: #f8e57c;
+}
+figure[class*=pk][class*="065"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/065B.png");
+  background-color: #ece577;
+}
+figure[class*=pk][class*="066"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/066.png");
+  background-color: #cee1dc;
+}
+figure[class*=pk][class*="067"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/067.png");
+  background-color: #d8d4e2;
+}
+figure[class*=pk][class*="068"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/068.png");
+  background-color: #a3b5c1;
+}
+figure[class*=pk][class*="069"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/069.png");
+  background-color: #f9f28a;
+}
+figure[class*=pk][class*="070"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/070.png");
+  background-color: #f9ed95;
+}
+figure[class*=pk][class*="071"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/071.png");
+  background-color: #f9ed95;
+}
+figure[class*=pk][class*="072"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/072.png");
+  background-color: #a4d4f8;
+}
+figure[class*=pk][class*="073"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/073.png");
+  background-color: #a6d5f8;
+}
+figure[class*=pk][class*="074"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/074A.png");
+  background-color: #d0c9ae;
+}
+figure[class*=pk][class*="074"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/074B.png");
+  background-color: #c1c7d2;
+}
+figure[class*=pk][class*="075"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/075A.png");
+  background-color: #d1cbb5;
+}
+figure[class*=pk][class*="075"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/075B.png");
+  background-color: #d1cab5;
+}
+figure[class*=pk][class*="076"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/076A.png");
+  background-color: #e1cdb8;
+}
+figure[class*=pk][class*="076"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/076B.png");
+  background-color: #d7cbb7;
+}
+figure[class*=pk][class*="077"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/077.png");
+  background-color: #fff8dd;
+}
+figure[class*=pk][class*="078"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/078.png");
+  background-color: #fff8dd;
+}
+figure[class*=pk][class*="079"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/079.png");
+  background-color: #fad4cc;
+}
+figure[class*=pk][class*="080"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/080A.png");
+  background-color: #fedbd9;
+}
+figure[class*=pk][class*="080"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/080B.png");
+  background-color: #fedbd9;
+}
+figure[class*=pk][class*="081"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/081.png");
+  background-color: #d8e6fe;
+}
+figure[class*=pk][class*="082"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/082.png");
+  background-color: #d6e5fd;
+}
+figure[class*=pk][class*="083"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/083.png");
+  background-color: #cdaf97;
+}
+figure[class*=pk][class*="084"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/084.png");
+  background-color: #e8cca7;
+}
+figure[class*=pk][class*="085"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/085.png");
+  background-color: #e6caa5;
+}
+figure[class*=pk][class*="086"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/086.png");
+  background-color: #eef1fc;
+}
+figure[class*=pk][class*="087"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/087.png");
+  background-color: #e8effb;
+}
+figure[class*=pk][class*="088"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/088A.png");
+  background-color: #d4c6df;
+}
+figure[class*=pk][class*="088"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/088B.png");
+  background-color: #abc7ab;
+}
+figure[class*=pk][class*="089"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/089A.png");
+  background-color: #d5c7df;
+}
+figure[class*=pk][class*="089"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/089B.png");
+  background-color: #abc7ab;
+}
+figure[class*=pk][class*="090"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/090.png");
+  background-color: #cacbf9;
+}
+figure[class*=pk][class*="091"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/091.png");
+  background-color: #a6a1d9;
+}
+figure[class*=pk][class*="092"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/092.png");
+  background-color: #929292;
+}
+figure[class*=pk][class*="093"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/093.png");
+  background-color: #b9a4e1;
+}
+figure[class*=pk][class*="094"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/094A.png");
+  background-color: #b9a4e1;
+}
+figure[class*=pk][class*="094"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/094B.png");
+  background-color: #a798cc;
+}
+figure[class*=pk][class*="095"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/095.png");
+  background-color: #d2d2cd;
+}
+figure[class*=pk][class*="096"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/096.png");
+  background-color: #f9e681;
+}
+figure[class*=pk][class*="097"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/097.png");
+  background-color: #fee679;
+}
+figure[class*=pk][class*="098"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/098.png");
+  background-color: #f8aa91;
+}
+figure[class*=pk][class*="099"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/099.png");
+  background-color: #f8a98f;
+}
+figure[class*=pk][class*="100"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/100.png");
+  background-color: #e29885;
+}
+figure[class*=pk][class*="101"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/101.png");
+  background-color: #d88c8d;
+}
+figure[class*=pk][class*="102"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/102.png");
+  background-color: #fee4e0;
+}
+figure[class*=pk][class*="103"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/103A.png");
+  background-color: #faf4b6;
+}
+figure[class*=pk][class*="103"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/103B.png");
+  background-color: #f9f3b4;
+}
+figure[class*=pk][class*="104"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/104.png");
+  background-color: #cbab82;
+}
+figure[class*=pk][class*="105"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/105A.png");
+  background-color: #cbab82;
+}
+figure[class*=pk][class*="105"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/105B.png");
+  background-color: #ad86ad;
+}
+figure[class*=pk][class*="106"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/106.png");
+  background-color: #c1a59b;
+}
+figure[class*=pk][class*="107"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/107.png");
+  background-color: #ddc7b1;
+}
+figure[class*=pk][class*="108"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/108.png");
+  background-color: #f4c1c5;
+}
+figure[class*=pk][class*="109"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/109.png");
+  background-color: #cecffe;
+}
+figure[class*=pk][class*="110"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/110.png");
+  background-color: #cecffe;
+}
+figure[class*=pk][class*="111"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/111.png");
+  background-color: #c7cdd2;
+}
+figure[class*=pk][class*="112"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/112.png");
+  background-color: #c9cfd4;
+}
+figure[class*=pk][class*="113"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/113.png");
+  background-color: #fff2f0;
+}
+figure[class*=pk][class*="114"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/114.png");
+  background-color: #8ec6fa;
+}
+figure[class*=pk][class*="115"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/115A.png");
+  background-color: #dbb8a2;
+}
+figure[class*=pk][class*="115"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/115B.png");
+  background-color: #dbb8a2;
+}
+figure[class*=pk][class*="116"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/116.png");
+  background-color: #a7defc;
+}
+figure[class*=pk][class*="117"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/117.png");
+  background-color: #b0e2fe;
+}
+figure[class*=pk][class*="118"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/118.png");
+  background-color: #f3aa9b;
+}
+figure[class*=pk][class*="119"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/119.png");
+  background-color: #f8a98f;
+}
+figure[class*=pk][class*="120"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/120.png");
+  background-color: #c49e80;
+}
+figure[class*=pk][class*="121"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/121.png");
+  background-color: #9fa0d9;
+}
+figure[class*=pk][class*="122"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/122.png");
+  background-color: #fee0d6;
+}
+figure[class*=pk][class*="123"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/123.png");
+  background-color: #a6d49b;
+}
+figure[class*=pk][class*="124"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/124.png");
+  background-color: #b2a2da;
+}
+figure[class*=pk][class*="125"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/125.png");
+  background-color: #f9e787;
+}
+figure[class*=pk][class*="126"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/126.png");
+  background-color: #e7a99a;
+}
+figure[class*=pk][class*="127"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/127A.png");
+  background-color: #dccbb6;
+}
+figure[class*=pk][class*="127"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/127B.png");
+  background-color: #d6c5b0;
+}
+figure[class*=pk][class*="128"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/128.png");
+  background-color: #e7d0a1;
+}
+figure[class*=pk][class*="129"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/129.png");
+  background-color: #f9a593;
+}
+figure[class*=pk][class*="130"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/130A.png");
+  background-color: #90bded;
+}
+figure[class*=pk][class*="130"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/130B.png");
+  background-color: #90bdee;
+}
+figure[class*=pk][class*="131"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/131.png");
+  background-color: #99d3fd;
+}
+figure[class*=pk][class*="132"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/132.png");
+  background-color: #bfb2e0;
+}
+figure[class*=pk][class*="133"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/133.png");
+  background-color: #e6c88b;
+}
+figure[class*=pk][class*="134"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/134.png");
+  background-color: #b4eaf4;
+}
+figure[class*=pk][class*="135"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/135.png");
+  background-color: #fef38e;
+}
+figure[class*=pk][class*="136"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/136.png");
+  background-color: #f8b389;
+}
+figure[class*=pk][class*="137"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/137.png");
+  background-color: #fed4cc;
+}
+figure[class*=pk][class*="138"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/138.png");
+  background-color: #b0ddfe;
+}
+figure[class*=pk][class*="139"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/139.png");
+  background-color: #c0e4fd;
+}
+figure[class*=pk][class*="140"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/140.png");
+  background-color: #e7d0a1;
+}
+figure[class*=pk][class*="141"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/141.png");
+  background-color: #ccac91;
+}
+figure[class*=pk][class*="142"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/142A.png");
+  background-color: #d7d7d7;
+}
+figure[class*=pk][class*="142"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/142B.png");
+  background-color: #d7d7d7;
+}
+figure[class*=pk][class*="143"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/143.png");
+  background-color: #81a8bb;
+}
+figure[class*=pk][class*="144"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/144.png");
+  background-color: #a5c9f9;
+}
+figure[class*=pk][class*="145"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/145.png");
+  background-color: #f8ec73;
+}
+figure[class*=pk][class*="146"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/146.png");
+  background-color: #fee785;
+}
+figure[class*=pk][class*="147"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/147.png");
+  background-color: #bdd4fc;
+}
+figure[class*=pk][class*="148"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/148.png");
+  background-color: #afcefd;
+}
+figure[class*=pk][class*="149"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/149.png");
+  background-color: #f8cc9a;
+}
+figure[class*=pk][class*="150"].a {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/150A.png");
+  background-color: #ede7f3;
+}
+figure[class*=pk][class*="150"].b {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/150B.png");
+  background-color: #ede7f3;
+}
+figure[class*=pk][class*="150"].c {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/150C.png");
+  background-color: #ede7f3;
+}
+figure[class*=pk][class*="151"] {
+  background-image: url("https://raw.githubusercontent.com/elletricity/sprites/master/pk/151.png");
+  background-color: #fed6dc;
+}
