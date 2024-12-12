@@ -1,17 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Pokémon TCG</title>
+    <title>Pokemon TCG</title>
 </head>
 <body>
-    <div id="shop">
-        <button id="buyPack">Buy Card Pack</button>
-        <div id="cardDisplay"></div>
-    </div>
+    <header>
+        <h1>Pokemon Trading Card Game</h1>
+    </header>
+    <main>
+        <section id="deck">
+            <h2>Your Deck</h2>
+            <div class="card-container"></div>
+        </section>
+        <section id="shop">
+            <h2>Shop</h2>
+            <button id="buyPack">Buy Card Pack</button>
+            <div class="pack-container"></div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
+<section id="code-reader">
+    <h2>Enter Card Pack Code</h2>
+    <input type="text" id="codeInput" maxlength="13" placeholder="Enter 13-digit code" />
+    <button id="validateCode">Validate Code</button>
+    <div id="codeMessage"></div>
+</section>
