@@ -58,3 +58,36 @@ document.getElementById('validateCode').addEventListener('click', function() {
     const message = validateCode(codeInput);
     document.getElementById('codeMessage').innerText = message;
 });
+const opponents = [
+    { id: 1, name: 'Gary Oak', level: 5 },
+    { id: 2, name: 'Misty', level: 7 },
+    { id: 3, name: 'Brock', level: 8 },
+];
+
+function battle(opponent) {
+    const playerLevel = 6; // Example player level, can be retrieved from the player's data
+    let resultMessage;
+
+    if (playerLevel >= opponent.level) {
+        resultMessage = `You defeated ${opponent.name}! You earned 100 coins!`;
+        // You can add code here to increase player coins/rewards
+    } else {
+        resultMessage = `You lost to ${opponent.name}. Better luck next time!`;
+    }
+
+    displayResult(resultMessage);
+}
+
+function displayResult(message) {
+    const battleResult = document.getElementById('battleResult');
+    battleResult.innerText = message;
+    battleResult.classList.remove('hidden');
+}
+
+document.querySelectorAll('.battle-button').forEach(button => {
+    button.addEventListener('click', function() {
+        const opponentId = this.parentElement.dataset.opponentId;
+        const opponent = opponents.find(op => op.id == opponentId);
+        battle(opponent);
+    });
+});
