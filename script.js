@@ -1,5 +1,5 @@
 const cards = [
-    { name: 'Pikachu', hp: 50, image: 'https://pkmncards.com/wp-content/uploads/sv1_en_001-1.jpg', back: 'https://th.bing.com/th/id/R.822be1519b67a0f657dbfeae47eba30b?rik=HVdbyVLgYp%2fEKA&pid=ImgRaw&r=0', code: '001' },
+    { name: 'Pikachu', hp: 50, image: 'https://pkmncards.com/wp-content/uploads/alakazam-base-set-bs-1.jpg', back: 'https://th.bing.com/th/id/R.822be1519b67a0f657dbfeae47eba30b?rik=HVdbyVLgYp%2fEKA&pid=ImgRaw&r=0', code: '001' },
     { name: 'Bulbasaur', hp: 60, image: 'bulbasaur.png', back: 'https://th.bing.com/th/id/R.822be1519b67a0f657dbfeae47eba30b?rik=HVdbyVLgYp%2fEKA&pid=ImgRaw&r=0', code: '002' },
     // Add more cards as needed
 ];
