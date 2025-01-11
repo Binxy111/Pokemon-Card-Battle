@@ -12,7 +12,7 @@
    $.getJSON('pokedex.json', function(data) {
        $.each(data.pokedex, function(i, f) {
           var tblRow = "<tr>" + "<td>" + f.hp + "</td>" +
-           "<td>" + f. + "</td>" + "<td>" + f.name + "</td>" + "<td>" + f. + "</td>" + "</tr>"
+           "<td>" + f. + "</td>" + "<td>" + f.base + "</td>" + "<td>" + f. + "</td>" + "</tr>"
            $(tblRow).appendTo("#userdata tbody");
      });
 
